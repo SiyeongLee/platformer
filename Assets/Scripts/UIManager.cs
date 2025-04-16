@@ -11,4 +11,18 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level_1");
     }
+
+    public void GameEx()
+    {
+        Application.Quit();
+    }
+
+
+
+
+
+
+
+
 }
+
