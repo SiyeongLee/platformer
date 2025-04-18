@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Obstacle
   - Item
+  - Power
+  - JumpPower
+  - SpeedPower
+  - End
   layers:
   - Default
   - TransparentFX

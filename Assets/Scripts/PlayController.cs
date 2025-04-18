@@ -6,14 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class PlayController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float jumpForce = 5f;
+    public float moveSpeed = 3f;
+    public float jumpForce = 3f;
     public Transform groundCheck;
     public LayerMask groundLayer;
     private bool isGrounded;
     private bool isGiant = false;
     public Rigidbody2D rb;
     private Animator pAni;
+    private bool power = false;
+    private bool jumpPower = false;
+    private bool SpeedPower = false;
+    private void Poweroff() { power  = false; }
+    private void JumpPoweroff() { jumpPower = false; }
+    
+    private void SpeedPoweroff() { SpeedPower = false; }
 
     private void Awake()
     {
@@ -80,7 +87,7 @@ public class PlayController : MonoBehaviour
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
 
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy")  && power == false)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -89,6 +96,48 @@ public class PlayController : MonoBehaviour
             isGiant = true;
             Destroy(collision.gameObject);
         }
+        if (collision.CompareTag("Power"))
+        {
+            power = true;
+            Invoke("Poweroff",15 );
+     
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("JumpPower"))
+        {
+            jumpPower = true;
+            Invoke("JumpPower off", jumpForce = 5);
+
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("SpeedPower"))
+        {
+            SpeedPower = true;
+            Invoke("SpeedPower", moveSpeed = 4);
+            Destroy(collision.gameObject);
+        }
+
+
+        if (collision.CompareTag("End"))
+        {
+            collision.GetComponent<LevelObject>().MoveToNextLevel();
+            Destroy(collision.gameObject);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
