@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pitfall (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2356447518660041168, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: rb
       value: 
@@ -201,6 +205,10 @@ PrefabInstance:
     - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: m_Name
       value: pitfall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2626778580932338316, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: m_Sprite
@@ -697,6 +705,10 @@ PrefabInstance:
     - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: m_Name
       value: pitfall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2356447518660041168, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: rb
@@ -4497,6 +4509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pitfall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2356447518660041168, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: rb
       value: 
@@ -4564,6 +4580,10 @@ PrefabInstance:
     - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: m_Name
       value: pitfall
+      objectReference: {fileID: 0}
+    - target: {fileID: 775671834371530841, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2356447518660041168, guid: 5d9ccaf4b0cbe0047a99ba8d02d9cbcd, type: 3}
       propertyPath: rb

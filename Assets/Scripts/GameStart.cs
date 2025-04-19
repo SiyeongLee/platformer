@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,14 +6,8 @@ using UnityEngine;
 
 public class GameStart : MonoBehaviour
 {
-
-
-    // Update is called once per frame
-    void Update()
+    public void OnClick()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            LoadingBar.LoadScene("Level_1");
-        }
+        LoadingBar.LoadScene("Level_1");
     }
 }

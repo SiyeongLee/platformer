@@ -100,8 +100,8 @@ public class PlayController : MonoBehaviour
         {
             power = true;
             Invoke("Poweroff",15 );
-     
             Destroy(collision.gameObject);
+
         }
         if (collision.CompareTag("JumpPower"))
         {

@@ -30,7 +30,7 @@ public class LoadingBar : MonoBehaviour
         while (!op.isDone)
         {
             yield return null;
-            timer += Time.deltaTime;
+            timer += Time.deltaTime * 0.2f;
             if (op.progress < 0.9f)
             {
                 progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, op.progress, timer);

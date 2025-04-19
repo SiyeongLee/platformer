@@ -9,7 +9,7 @@ public class LevelObject : MonoBehaviour
 
     public void MoveToNextLevel()
     {
-      SceneManager.LoadScene(nextLevel);
+        LoadingBar.LoadScene(nextLevel);
     }
     // Start is called before the first frame update
     void Start()
