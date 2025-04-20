@@ -8293,6 +8293,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3352552443653814210, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352552443653814210, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: traceDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352552443653814210, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: raycastDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4738550436350981332, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8

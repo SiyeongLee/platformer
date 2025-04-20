@@ -15,12 +15,11 @@ public class PlayController : MonoBehaviour
     public Rigidbody2D rb;
     private Animator pAni;
     private bool power = false;
-    private bool jumpPower = false;
-    private bool SpeedPower = false;
-    private void Poweroff() { power  = false; }
-    private void JumpPoweroff() { jumpPower = false; }
     
-    private void SpeedPoweroff() { SpeedPower = false; }
+    private void Poweroff() { power  = false; }
+    private void JumpPoweroff() { jumpForce = 3f; }
+    
+    private void SpeedPoweroff() { moveSpeed = 3f; }
 
     private void Awake()
     {
@@ -105,22 +104,22 @@ public class PlayController : MonoBehaviour
         }
         if (collision.CompareTag("JumpPower"))
         {
-            jumpPower = true;
-            Invoke("JumpPower off", jumpForce = 5);
+            jumpForce = 5;
+            Invoke("JumpPoweroff", 15);
 
             Destroy(collision.gameObject);
         }
         if (collision.CompareTag("SpeedPower"))
         {
-            SpeedPower = true;
-            Invoke("SpeedPower", moveSpeed = 4);
+            moveSpeed = 5;
+            Invoke("SpeedPoweroff", 15);
             Destroy(collision.gameObject);
         }
 
 
         if (collision.CompareTag("End"))
         {
-            collision.GetComponent<LevelObject>().MoveToNextLevel();
+           
             Destroy(collision.gameObject);
         }
 

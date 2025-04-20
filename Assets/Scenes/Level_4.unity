@@ -347,6 +347,14 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7178143743654534736, guid: ed0f72672110e354cb89dd32b0caacde, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178143743654534736, guid: ed0f72672110e354cb89dd32b0caacde, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178143743654534736, guid: ed0f72672110e354cb89dd32b0caacde, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.456
       objectReference: {fileID: 0}
@@ -1038,6 +1046,26 @@ PrefabInstance:
     - target: {fileID: 829776120476530156, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
       propertyPath: m_Name
       value: MoveEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352552443653814210, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352552443653814210, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: traceDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352552443653814210, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: raycastDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738550436350981332, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738550436350981332, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4738550436350981332, guid: c63ad5cb0129f064e9f197f91de67f8d, type: 3}
       propertyPath: m_LocalPosition.x
